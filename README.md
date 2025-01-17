@@ -1,3 +1,5 @@
+# AKORN
+
 In order to attain optimal rates, state-of-the-art algorithms for non-parametric
 2 regression require that a hyperparameter be tuned according to the smoothness
 3 of the ground truth [Tibshirani, 2014]. This amounts to an assumption of oracle
