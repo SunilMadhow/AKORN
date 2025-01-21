@@ -91,7 +91,7 @@ class FLH:
 
 		W = []
 		for j in range(self.T):
-			if j%10 == 0:
+			if j%200 == 0:
 				print(j)
 			# print(self.weights)
 			w = self.weights + [0]*(self.T - j)

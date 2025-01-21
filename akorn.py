@@ -58,6 +58,10 @@ class AKORN:
 		knots_for = self.bins_to_knots(binned_x_for)
 		knots_back = self.bins_to_knots(binned_x_back)
 
+		if np.in1d(np.array(knots_for),np.array(knots_back)).any():
+			print("Warning: shared knot")
+
+
 		sp_for = RegressionSpline(X, Y, knots_for)
 		sp_back = RegressionSpline(X, Y, knots_back)
 		sp_for.train()
